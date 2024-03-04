@@ -18,7 +18,6 @@ export const Participants = () => {
                 {users.slice(0, MAX_SHOWN_USERS)
                     .map(({ connectionId, info }) => {
                         return (
-
                             <UserAvatar
                                 borderColor={connectionIdToColor(connectionId)}
                                 key={connectionId}
