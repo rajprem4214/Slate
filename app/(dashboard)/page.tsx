@@ -2,7 +2,7 @@
 
 import { useOrganization } from "@clerk/nextjs";
 import { EmptyOrg } from "./_components/empty-org";
-import { BoardList } from "./_components/board-list";
+import { SlateList } from "./_components/slate-list";
 
 interface DashboardPageProps {
     searchParams: {
@@ -22,7 +22,7 @@ const DashboardPage = ({
             {!organization ? (
                 <EmptyOrg />
             ) : (
-                <BoardList 
+                <SlateList 
                   orgId={organization.id}
                   query={searchParams}
                 />
